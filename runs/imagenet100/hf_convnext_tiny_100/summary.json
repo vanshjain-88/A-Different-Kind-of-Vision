@@ -1,0 +1,10 @@
+{
+  "name": "hf_convnext_tiny_100",
+  "model": "convnext_tiny",
+  "hf_repo": "facebook/convnext-tiny-224",
+  "pretrained": false,
+  "params": 27897028,
+  "best_val_top1": 0.8184615384615385,
+  "test_loss": 1.054792498779297,
+  "test_top1": 0.7844
+}

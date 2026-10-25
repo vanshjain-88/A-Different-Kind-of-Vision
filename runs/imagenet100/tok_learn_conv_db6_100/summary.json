@@ -1,0 +1,8 @@
+{
+  "name": "tok_learn_conv_db6_100",
+  "wavelet": "db6",
+  "params": 6771300,
+  "best_val_top1": 0.7821538461538462,
+  "test_loss": 1.2344542236328124,
+  "test_top1": 0.7382
+}

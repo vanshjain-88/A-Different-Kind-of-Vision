@@ -1,0 +1,41 @@
+gpurun: job 2481 on GPU(s) [0] [guaranteed] remaining budget 25.23h
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+params=6,768,996 tokens/img=256 token_dim=768 batch=256 mixer=conv learn_filters=False modulus=False
+[tok_fixed_conv] 001/030 train_loss=4.4673 train_top1=2.92% val_loss=4.2050 val_top1=5.45% best=5.45% | 1845 img/s | ortho=0.00e+00
+[tok_fixed_conv] 002/030 train_loss=4.1671 train_top1=7.39% val_loss=3.7560 val_top1=11.46% best=11.46% | 2142 img/s | ortho=0.00e+00
+[tok_fixed_conv] 003/030 train_loss=3.8356 train_top1=13.71% val_loss=3.1759 val_top1=22.96% best=22.96% | 2131 img/s | ortho=0.00e+00
+[tok_fixed_conv] 004/030 train_loss=3.4644 train_top1=22.23% val_loss=2.7652 val_top1=31.21% best=31.21% | 2134 img/s | ortho=0.00e+00
+[tok_fixed_conv] 005/030 train_loss=3.1433 train_top1=30.19% val_loss=2.3470 val_top1=40.55% best=40.55% | 2139 img/s | ortho=0.00e+00
+[tok_fixed_conv] 006/030 train_loss=2.8868 train_top1=37.18% val_loss=2.0599 val_top1=46.41% best=46.41% | 2124 img/s | ortho=0.00e+00
+[tok_fixed_conv] 007/030 train_loss=2.6806 train_top1=42.87% val_loss=1.8817 val_top1=50.79% best=50.79% | 2129 img/s | ortho=0.00e+00
+[tok_fixed_conv] 008/030 train_loss=2.5197 train_top1=47.30% val_loss=1.7094 val_top1=54.72% best=54.72% | 2132 img/s | ortho=0.00e+00
+[tok_fixed_conv] 009/030 train_loss=2.3870 train_top1=50.90% val_loss=1.5667 val_top1=58.85% best=58.85% | 2151 img/s | ortho=0.00e+00
+[tok_fixed_conv] 010/030 train_loss=2.2844 train_top1=54.03% val_loss=1.4966 val_top1=60.75% best=60.75% | 2121 img/s | ortho=0.00e+00
+[tok_fixed_conv] 011/030 train_loss=2.1760 train_top1=57.11% val_loss=1.4048 val_top1=62.93% best=62.93% | 2110 img/s | ortho=0.00e+00
+[tok_fixed_conv] 012/030 train_loss=2.0968 train_top1=59.55% val_loss=1.3169 val_top1=65.02% best=65.02% | 2127 img/s | ortho=0.00e+00
+[tok_fixed_conv] 013/030 train_loss=2.0228 train_top1=61.63% val_loss=1.2709 val_top1=66.27% best=66.27% | 2150 img/s | ortho=0.00e+00
+[tok_fixed_conv] 014/030 train_loss=1.9449 train_top1=63.84% val_loss=1.2670 val_top1=66.33% best=66.33% | 2158 img/s | ortho=0.00e+00
+[tok_fixed_conv] 015/030 train_loss=1.8820 train_top1=65.84% val_loss=1.2071 val_top1=67.92% best=67.92% | 2161 img/s | ortho=0.00e+00
+[tok_fixed_conv] 016/030 train_loss=1.8180 train_top1=67.78% val_loss=1.1651 val_top1=69.16% best=69.16% | 2124 img/s | ortho=0.00e+00
+[tok_fixed_conv] 017/030 train_loss=1.7636 train_top1=69.46% val_loss=1.1422 val_top1=69.91% best=69.91% | 2086 img/s | ortho=0.00e+00
+[tok_fixed_conv] 018/030 train_loss=1.7134 train_top1=71.07% val_loss=1.1261 val_top1=70.63% best=70.63% | 2114 img/s | ortho=0.00e+00
+[tok_fixed_conv] 019/030 train_loss=1.6647 train_top1=72.50% val_loss=1.1133 val_top1=70.72% best=70.72% | 2129 img/s | ortho=0.00e+00
+[tok_fixed_conv] 020/030 train_loss=1.6176 train_top1=74.05% val_loss=1.0942 val_top1=71.43% best=71.43% | 2134 img/s | ortho=0.00e+00
+[tok_fixed_conv] 021/030 train_loss=1.5705 train_top1=75.59% val_loss=1.0548 val_top1=72.35% best=72.35% | 2087 img/s | ortho=0.00e+00
+[tok_fixed_conv] 022/030 train_loss=1.5370 train_top1=76.69% val_loss=1.0654 val_top1=72.64% best=72.64% | 2097 img/s | ortho=0.00e+00
+[tok_fixed_conv] 023/030 train_loss=1.5020 train_top1=77.85% val_loss=1.0494 val_top1=73.02% best=73.02% | 2112 img/s | ortho=0.00e+00
+[tok_fixed_conv] 024/030 train_loss=1.4717 train_top1=78.96% val_loss=1.0377 val_top1=73.20% best=73.20% | 2150 img/s | ortho=0.00e+00
+[tok_fixed_conv] 025/030 train_loss=1.4455 train_top1=79.81% val_loss=1.0314 val_top1=73.26% best=73.26% | 2084 img/s | ortho=0.00e+00
+[tok_fixed_conv] 026/030 train_loss=1.4271 train_top1=80.35% val_loss=1.0253 val_top1=73.50% best=73.50% | 2095 img/s | ortho=0.00e+00
+[tok_fixed_conv] 027/030 train_loss=1.4097 train_top1=81.08% val_loss=1.0211 val_top1=73.60% best=73.60% | 2143 img/s | ortho=0.00e+00
+[tok_fixed_conv] 028/030 train_loss=1.4011 train_top1=81.36% val_loss=1.0198 val_top1=73.73% best=73.73% | 2139 img/s | ortho=0.00e+00
+[tok_fixed_conv] 029/030 train_loss=1.3962 train_top1=81.52% val_loss=1.0192 val_top1=73.64% best=73.73% | 2111 img/s | ortho=0.00e+00
+[tok_fixed_conv] 030/030 train_loss=1.3918 train_top1=81.73% val_loss=1.0188 val_top1=73.70% best=73.73% | 2131 img/s | ortho=0.00e+00
+[tok_fixed_conv] TEST top1=69.54% loss=1.1838
+{
+  "name": "tok_fixed_conv",
+  "params": 6768996,
+  "best_val_top1": 0.7373076923076923,
+  "test_loss": 1.1838425537109376,
+  "test_top1": 0.6954
+}

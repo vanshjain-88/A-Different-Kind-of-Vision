@@ -1,0 +1,10 @@
+{
+  "name": "hf_resnet50_100",
+  "model": "resnet50",
+  "hf_repo": "microsoft/resnet-50",
+  "pretrained": false,
+  "params": 23712932,
+  "best_val_top1": 0.8553076923076923,
+  "test_loss": 0.8372450988769531,
+  "test_top1": 0.8234
+}

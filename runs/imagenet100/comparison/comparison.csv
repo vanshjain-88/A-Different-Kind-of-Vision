@@ -1,0 +1,7 @@
+model,group,params,params_m,best_epoch,epochs,best_val_top1,test_top1
+Daubechies-4 (ours),ours,6770020,6.77,99,100,77.95,74.44
+Daubechies-2 (ours),ours,6769252,6.77,100,100,78.78,74.16
+Haar decimated (ours),ours,6769060,6.77,95,100,78.09,73.80
+Haar undecimated (ours),ours,6769060,6.77,98,100,76.41,72.72
+ResNet-50,industry,23712932,23.71,95,100,85.53,82.34
+DeiT-Small,industry,21727204,21.73,98,100,71.73,66.80

@@ -1,0 +1,8 @@
+{
+  "name": "tok_pixels_mlp1_100",
+  "wavelet": "db2",
+  "params": 2041188,
+  "best_val_top1": 0.7730769230769231,
+  "test_loss": 1.0972285827636719,
+  "test_top1": 0.7316
+}

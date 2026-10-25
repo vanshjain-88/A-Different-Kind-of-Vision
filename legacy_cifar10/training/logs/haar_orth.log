@@ -1,0 +1,3 @@
+gpurun: job 2454 on GPU(s) [0] [guaranteed] remaining budget 47.18h
+python3: can't open file '/home/vansh23578/projects/Geometric-Tokenisers-1/training/new.py': [Errno 2] No such file or directory
+[haar_orth] attempt 1 failed, retrying in 30s

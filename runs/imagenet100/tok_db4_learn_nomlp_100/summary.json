@@ -1,0 +1,8 @@
+{
+  "name": "tok_db4_learn_nomlp_100",
+  "wavelet": "db4",
+  "params": 453988,
+  "best_val_top1": 0.40792307692307694,
+  "test_loss": 2.541048645019531,
+  "test_top1": 0.3652
+}

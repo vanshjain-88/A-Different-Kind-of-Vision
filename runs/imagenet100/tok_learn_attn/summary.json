@@ -1,0 +1,7 @@
+{
+  "name": "tok_learn_attn",
+  "params": 9773476,
+  "best_val_top1": 0.7023846153846154,
+  "test_loss": 1.3225741455078126,
+  "test_top1": 0.6562
+}

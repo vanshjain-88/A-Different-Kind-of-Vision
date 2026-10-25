@@ -1,0 +1,7 @@
+{
+  "name": "tok_learn_conv_undecimated",
+  "params": 6769060,
+  "best_val_top1": 0.7640769230769231,
+  "test_loss": 1.2829159301757813,
+  "test_top1": 0.7272
+}

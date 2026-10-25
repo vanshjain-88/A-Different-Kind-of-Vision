@@ -1,0 +1,318 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+
+\title{A learnable Haar tokenizer for ImageNet-100\\
+\large Architecture, training, and ablation results from \texttt{haar\_tok.py}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\texttt{haar\_tok.py} trains a classifier whose first stage is a four-level
+Haar analysis of a $256\times256$ image. With the filters held at their Haar
+initialisation, each $16\times16$ image patch is replaced by the $768$
+coefficients of an orthonormal transform of that patch. Those coefficients are
+then mixed by a twelve-block network and pooled into one of $100$ ImageNet-100
+classes. The run \texttt{tok\_learn\_conv\_100} trains the filters, keeps a
+depthwise-convolution mixer, and runs for $100$ epochs. Its best validation
+checkpoint reaches \textbf{73.80\% top-1} on the official test split of
+\textbf{5{,}000 images} (validation 78.09\% on 13{,}000 images). Thirty-epoch
+ablations show that a convolution mixer beats attention, that unfreezing the
+Haar filters changes accuracy only slightly at $30$ epochs, and that appending
+detail magnitudes is the strongest $30$-epoch variant.
+\end{abstract}
+
+\section{What the script writes}
+
+A run named \texttt{--name} (default \texttt{haar\_tok}) creates the directory
+\texttt{training/checkpoints/runs/imagenet100/<name>/} and writes:
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+File & Contents \\
+\midrule
+\texttt{args.json} & every command-line setting for the run \\
+\texttt{history.csv} & one row per epoch: losses, top-1, learning rate, orthogonality \\
+\texttt{last.pt} & weights and AdamW state after the latest epoch \\
+\texttt{best.pt} & the same state at the best validation top-1 so far \\
+\texttt{summary.json} & parameter count, best validation top-1, and the single test evaluation \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The test number below is not the accuracy of epoch $100$. After training, the
+script reloads \texttt{best.pt} and evaluates that checkpoint once. For
+\texttt{tok\_learn\_conv\_100} the best validation epoch is epoch $95$.
+
+\section{Data}
+
+The dataset is the Hugging Face release \texttt{ilee0022/ImageNet100}, read
+from the cache under \texttt{training/checkpoints/data/imagenet100}. Its
+recorded splits are:
+
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Split & Images \\
+\midrule
+Train & 117{,}000 \\
+Validation & 13{,}000 \\
+Test & 5{,}000 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+There are $100$ classes. The training loader uses batch size $256$ and drops
+the last incomplete batch, so each epoch updates on $116{,}992$ of the
+$117{,}000$ training images. Validation and test loaders do not drop images.
+The test loader uses batch size $512$. Thus $73.80\%$ test accuracy is
+$3{,}690$ correct predictions out of $5{,}000$.
+
+Training images are randomly resized and cropped to $256\times256$ with scale
+range $(0.67,1)$, flipped horizontally, passed through RandAugment with two
+operations of magnitude $9$, normalised with the ImageNet channel statistics
+$(0.485,0.456,0.406)$ and $(0.229,0.224,0.225)$, and then randomly erased with
+probability $0.25$. Evaluation resizes the short side to $293$
+($256/0.875$, rounded) and takes a $256\times256$ centre crop before the same
+normalisation. No augmentation is used at evaluation.
+
+\section{The Haar tokenizer}
+
+\subsection{One analysis step}
+
+The tokenizer applies a stride-$2$ convolution with four $2\times2$ kernels
+and no padding. Because the support is exactly one $2\times2$ block, neighbouring
+blocks do not overlap. The four kernels are initialised to the orthonormal
+two-dimensional Haar bank
+\begin{equation}
+\begin{aligned}
+W_{\mathrm{LL}} &= \tfrac12\begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix}, &
+W_{\mathrm{LH}} &= \tfrac12\begin{bmatrix} 1 & -1 \\ 1 & -1 \end{bmatrix}, \\[4pt]
+W_{\mathrm{HL}} &= \tfrac12\begin{bmatrix} 1 & 1 \\ -1 & -1 \end{bmatrix}, &
+W_{\mathrm{HH}} &= \tfrac12\begin{bmatrix} 1 & -1 \\ -1 & 1 \end{bmatrix}.
+\end{aligned}
+\end{equation}
+Flattening each kernel into a row gives a $4\times4$ matrix $W$. These rows
+are orthonormal: $WW^{\mathsf T}=I_4$. Consequently one analysis step replaces
+every $2\times2$ neighbourhood by four coefficients and preserves Euclidean
+norm. The same four kernels are used independently on red, green, and blue.
+There is one bank per wavelet level, not one bank per channel.
+
+Low-pass coefficients are passed to the next level. The three detail bands at
+that level are retained.
+
+\subsection{Four levels on a $16\times16$ patch grid}
+
+The image is $256\times256$ and the patch size is $16$, so there are four
+dyadic levels and a $16\times16$ grid of $256$ tokens. After level $\ell$
+(starting at $\ell=0$) the detail maps have spatial size $256/2^{\ell+1}$.
+Those maps are rearranged with pixel unshuffle so that every coefficient whose
+receptive field lies inside a given $16\times16$ image region is stored at that
+region's token. For one colour channel the coefficient counts are:
+
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Level & Spatial size before packing & Detail coefficients & Role \\
+\midrule
+0 & $128\times128$ & $3\times8\times8=192$ & finest edges and texture \\
+1 & $64\times64$ & $3\times4\times4=48$ & \\
+2 & $32\times32$ & $3\times2\times2=12$ & \\
+3 & $16\times16$ & $3\times1\times1=3$ & coarsest details \\
+3 (LL) & $16\times16$ & $1$ & local average of the patch \\
+\midrule
+\multicolumn{2}{@{}l}{Total per channel} & \multicolumn{2}{r@{}}{$256=16^{2}$} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Three channels therefore produce
+\begin{equation}
+3\times16\times16=768
+\end{equation}
+numbers at every token. While the filters remain the Haar bank above, this
+vector is an orthonormal reparameterisation of the $768$ pixels in the
+$16\times16\times3$ patch: nothing inside the patch is discarded, and no pixel
+from a neighbouring patch enters the token. This is the property a length-$2$
+Haar filter has and a longer wavelet filter does not.
+
+\subsection{Making the filters trainable}
+
+In the $74\%$ run the $64$ filter values ($4$ levels $\times4$ kernels
+$\times2\times2$) are parameters. They are computed in float32 even though the
+rest of the network runs in bfloat16. A soft penalty discourages them from
+leaving the orthonormal family. If $W_\ell\in\mathbb R^{4\times4}$ is the
+flattened bank at level $\ell$,
+\begin{equation}
+\mathcal L_{\mathrm{ortho}}
+= \frac1{4}\sum_{\ell=0}^{3}\lVert W_\ell W_\ell^{\mathsf T}-I_4\rVert_F^2.
+\end{equation}
+The training loss adds $10^{-2}\,\mathcal L_{\mathrm{ortho}}$ to cross-entropy.
+The recorded penalty itself is about $3\times10^{-3}$ after epoch $1$ and about
+$0.214$ at epoch $95$, so the learned filters do drift. The weighted penalty
+contributes roughly $0.002$ to a cross-entropy near $0.90$ late in training, which
+is too small to freeze them at Haar. Filter weights are also excluded from
+AdamW weight decay, together with the positional embedding and every
+one-dimensional parameter.
+
+The fixed-filter ablation registers the same initial bank as a buffer. Its
+penalty is identically zero and it has $64$ fewer trainable parameters
+($6{,}768{,}996$ instead of $6{,}769{,}060$).
+
+An optional modulus mode appends the absolute value of every detail map before
+the linear embedding. The low-pass map is not duplicated. The resulting token
+width is $1{,}533$ and the recorded model has $6{,}966{,}430$ parameters. The
+$100$-epoch run does not use this mode.
+
+\section{From tokens to a class}
+
+Each $768$-dimensional token is layer-normalised and linearly mapped to
+dimension $d=256$. A learned positional vector is added. There is no class
+token. The sequence of $256$ tokens passes through $12$ pre-norm residual
+blocks. Block $i$ uses drop-path rate $0.1\cdot i/11$ and two layer-scale
+vectors initialised to $10^{-4}$:
+\begin{equation}
+\begin{aligned}
+z &\leftarrow z + \gamma_1\odot \mathrm{Mixer}(\mathrm{LN}(z)),\\
+z &\leftarrow z + \gamma_2\odot \mathrm{MLP}(\mathrm{LN}(z)).
+\end{aligned}
+\end{equation}
+The MLP expands $256$ to $1{,}024$, applies GELU, and returns to $256$.
+
+The mixer used for the $74\%$ model is a depthwise $7\times7$ convolution. The
+sequence is reshaped to a $16\times16$ feature map, convolved with one
+$7\times7$ kernel per channel, and reshaped back. It mixes only neighbouring
+tokens. The attention ablation instead uses four-head scaled dot-product
+attention over all $256$ tokens, with a combined query-key-value projection.
+That model has $9{,}773{,}476$ parameters.
+
+After the last block the tokens are layer-normalised and averaged over the
+$256$ positions. A linear layer maps the $256$-dimensional mean to $100$
+logits. Softmax is not applied inside the model.
+
+\section{Optimisation}
+
+The $100$-epoch configuration recorded in
+\texttt{tok\_learn\_conv\_100/args.json} is:
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Choice & Value \\
+\midrule
+Epochs & $100$ \\
+Warmup & $5$ epochs \\
+Batch size & $256$ \\
+Optimiser & fused AdamW \\
+Peak learning rate & $10^{-3}$ \\
+Schedule & linear warmup, then cosine decay to zero, updated every step \\
+Weight decay & $0.05$ on matrix weights only \\
+Label smoothing & $0.1$ \\
+Orthogonality weight & $10^{-2}$ \\
+Precision & bfloat16 autocast, tokenizer in float32 \\
+Seed & $42$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The thirty-epoch ablations use the same recipe except that warmup is $3$
+epochs rather than $5$. Train top-1 is measured under the smoothed training
+loss; reported train loss is the smoothed cross-entropy and does not include
+the orthogonality term. Validation and test losses are unsmoothed
+cross-entropy. Checkpoint selection uses validation top-1 only. The test split
+is not read until training has finished.
+
+\section{The $100$-epoch result}
+
+\texttt{tok\_learn\_conv\_100} is learnable Haar filters, the depthwise
+convolution mixer, no modulus features, and $100$ epochs.
+
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+ & Epoch 95 (selected) & Epoch 100 (last) \\
+\midrule
+Train loss & 0.897 & 0.895 \\
+Train top-1 & 96.70\% & 96.79\% \\
+Validation loss & 0.998 & 0.997 \\
+Validation top-1 & 78.09\% & 78.01\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Epoch $95$ is the best of the $100$ validation measurements: $10{,}152/13{,}000$.
+Reloading that checkpoint and evaluating the untouched test split gives
+
+\begin{equation}
+\text{test top-1}=73.80\%,\qquad \text{test loss}=1.237.
+\end{equation}
+
+The train accuracy near $97\%$ against $78\%$ validation and $74\%$ test shows
+that the model has memorised much of the training set by the time the cosine
+schedule has decayed. The orthogonality penalty at epoch $95$ is $0.214$.
+
+\section{Ablations}
+
+All ablations below were selected the same way: best validation checkpoint,
+then one test evaluation. The first four rows use $30$ epochs. The last row is
+the run above.
+
+\begin{center}
+\small
+\begin{tabular}{@{}lccccrrrr@{}}
+\toprule
+Run & Epochs & Filters & Mixer & $|{\cdot}|$ & Params & Best val & Test \\
+\midrule
+\texttt{tok\_fixed\_conv} & 30 & fixed Haar & conv $7\times7$ & no & 6.769M & 73.73\% & 69.54\% \\
+\texttt{tok\_learn\_conv} & 30 & learned & conv $7\times7$ & no & 6.769M & 74.23\% & 69.46\% \\
+\texttt{tok\_learn\_attn} & 30 & learned & attention & no & 9.773M & 70.24\% & 65.62\% \\
+\texttt{tok\_learn\_mod} & 30 & learned & conv $7\times7$ & yes & 6.967M & 75.92\% & 72.52\% \\
+\texttt{tok\_learn\_conv\_100} & 100 & learned & conv $7\times7$ & no & 6.769M & 78.09\% & \textbf{73.80\%} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+At equal epoch count, replacing the convolution mixer with global attention
+costs about $4$ test points and adds about three million parameters. Unfreezing
+the Haar filters improves validation by half a point at $30$ epochs and does
+not improve test accuracy ($69.46\%$ learned versus $69.54\%$ fixed). The gain
+that produces $73.80\%$ is therefore mostly the additional $70$ epochs, not the
+$64$ extra filter parameters. Adding detail magnitudes is the strongest change
+available inside the $30$-epoch budget: $72.52\%$ test, within $1.3$ points of
+the $100$-epoch model, without a matching $100$-epoch modulus run.
+
+These tokenizer runs are a different model from the earlier operator-mixer
+experiments \texttt{haar\_orth} and \texttt{haar\_over}. Those runs reconstruct
+full-resolution Haar subspaces and mix channels with $D\times D$ matrices.
+After $30$ epochs their best validation accuracies were $27.71\%$ and
+$30.27\%$. They are not the source of the $73.80\%$ test result.
+
+\section{End-to-end shape}
+
+For one image in the $74\%$ configuration:
+\begin{equation}
+\begin{aligned}
+\mathbb R^{3\times256\times256}
+&\;\xrightarrow{\;\text{4-level Haar}\;}\;
+\mathbb R^{768\times16\times16}\\
+&\;\xrightarrow{\;\text{LN, linear, position}\;}\;
+\mathbb R^{256\times256}\\
+&\;\xrightarrow{\;\text{12 mixer blocks}\;}\;
+\mathbb R^{256\times256}\\
+&\;\xrightarrow{\;\text{mean over tokens}\;}\;
+\mathbb R^{256}
+\;\xrightarrow{\;\text{linear}\;}\;
+\mathbb R^{100}.
+\end{aligned}
+\end{equation}
+The middle $256$ is the token count, not the channel count. Each of those
+tokens is the multi-scale Haar description of one non-overlapping $16\times16$
+patch, projected from $768$ coefficients to $256$ features.
+
+\end{document}

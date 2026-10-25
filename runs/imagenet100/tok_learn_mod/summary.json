@@ -1,0 +1,7 @@
+{
+  "name": "tok_learn_mod",
+  "params": 6966430,
+  "best_val_top1": 0.7592307692307693,
+  "test_loss": 1.1125715515136718,
+  "test_top1": 0.7252
+}

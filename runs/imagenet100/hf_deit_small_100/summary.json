@@ -1,0 +1,10 @@
+{
+  "name": "hf_deit_small_100",
+  "model": "deit_small",
+  "hf_repo": "facebook/deit-small-patch16-224",
+  "pretrained": false,
+  "params": 21727204,
+  "best_val_top1": 0.7173076923076923,
+  "test_loss": 1.6193334106445312,
+  "test_top1": 0.668
+}

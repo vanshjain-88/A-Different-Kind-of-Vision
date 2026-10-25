@@ -1,0 +1,168 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Resolving data files:   0%|                                                                                         | 0/30 [00:00<?, ?it/s]Resolving data files: 100%|##############################################################################| 30/30 [00:00<00:00, 6769.74it/s]
+Resolving data files:   0%|                                                                                         | 0/30 [00:00<?, ?it/s]Resolving data files: 100%|##############################################################################| 30/30 [00:00<00:00, 9447.34it/s]
+Loading dataset shards:   0%|                                                                                       | 0/30 [00:00<?, ?it/s]Loading dataset shards: 100%|############################################################################| 30/30 [00:00<00:00, 1723.99it/s]
+params=21,727,204 model=deit_small hf_repo=facebook/deit-small-patch16-224 pretrained=False image_size=256 batch=256 drop_path=None
+[hf_deit_small_100] 001/100 train_loss=4.2150 train_top1=7.41% val_loss=3.6625 val_top1=14.75% best=14.75% | 1521 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 002/100 train_loss=3.7945 train_top1=15.37% val_loss=3.2088 val_top1=22.98% best=22.98% | 1698 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 003/100 train_loss=3.5607 train_top1=20.52% val_loss=2.9180 val_top1=28.79% best=28.79% | 1696 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 004/100 train_loss=3.4397 train_top1=23.39% val_loss=2.7699 val_top1=31.72% best=31.72% | 1689 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 005/100 train_loss=3.3742 train_top1=24.69% val_loss=2.7552 val_top1=32.58% best=32.58% | 1691 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 006/100 train_loss=3.2675 train_top1=27.49% val_loss=2.5897 val_top1=35.95% best=35.95% | 1697 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 007/100 train_loss=3.0727 train_top1=32.09% val_loss=2.3634 val_top1=40.03% best=40.03% | 1690 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 008/100 train_loss=2.9236 train_top1=35.96% val_loss=2.2237 val_top1=43.35% best=43.35% | 1687 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 009/100 train_loss=2.7824 train_top1=39.53% val_loss=2.0893 val_top1=46.75% best=46.75% | 1694 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 010/100 train_loss=2.6727 train_top1=42.52% val_loss=1.9607 val_top1=49.91% best=49.91% | 1688 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 011/100 train_loss=2.5546 train_top1=45.72% val_loss=1.8744 val_top1=51.98% best=51.98% | 1697 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 012/100 train_loss=2.4643 train_top1=48.08% val_loss=1.7715 val_top1=54.32% best=54.32% | 1684 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 013/100 train_loss=2.3713 train_top1=50.84% val_loss=1.6690 val_top1=56.54% best=56.54% | 1684 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 014/100 train_loss=2.2905 train_top1=52.81% val_loss=1.6713 val_top1=57.25% best=57.25% | 1688 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 015/100 train_loss=2.2130 train_top1=55.11% val_loss=1.6137 val_top1=58.30% best=58.30% | 1694 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 016/100 train_loss=2.1376 train_top1=57.28% val_loss=1.5592 val_top1=59.56% best=59.56% | 1680 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 017/100 train_loss=2.0738 train_top1=59.15% val_loss=1.5111 val_top1=61.05% best=61.05% | 1692 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 018/100 train_loss=2.0040 train_top1=61.19% val_loss=1.4989 val_top1=61.48% best=61.48% | 1688 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 019/100 train_loss=1.9519 train_top1=62.56% val_loss=1.4459 val_top1=62.65% best=62.65% | 1694 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 020/100 train_loss=1.8948 train_top1=64.22% val_loss=1.4138 val_top1=63.79% best=63.79% | 1691 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 021/100 train_loss=1.8331 train_top1=66.21% val_loss=1.4061 val_top1=63.61% best=63.79% | 1685 img/s
+[hf_deit_small_100] 022/100 train_loss=1.7824 train_top1=67.79% val_loss=1.3586 val_top1=64.55% best=64.55% | 1690 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 023/100 train_loss=1.7356 train_top1=69.13% val_loss=1.3316 val_top1=65.65% best=65.65% | 1696 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 024/100 train_loss=1.6832 train_top1=70.79% val_loss=1.3279 val_top1=66.18% best=66.18% | 1691 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 025/100 train_loss=1.6336 train_top1=72.26% val_loss=1.3578 val_top1=65.65% best=66.18% | 1695 img/s
+[hf_deit_small_100] 026/100 train_loss=1.5960 train_top1=73.46% val_loss=1.3465 val_top1=65.69% best=66.18% | 1691 img/s
+[hf_deit_small_100] 027/100 train_loss=1.5508 train_top1=74.89% val_loss=1.3362 val_top1=66.49% best=66.49% | 1698 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 028/100 train_loss=1.5088 train_top1=76.40% val_loss=1.3600 val_top1=66.09% best=66.49% | 1687 img/s
+[hf_deit_small_100] 029/100 train_loss=1.4755 train_top1=77.55% val_loss=1.3610 val_top1=66.04% best=66.49% | 1687 img/s
+[hf_deit_small_100] 030/100 train_loss=1.4425 train_top1=78.60% val_loss=1.3331 val_top1=66.22% best=66.49% | 1688 img/s
+[hf_deit_small_100] 031/100 train_loss=1.4126 train_top1=79.58% val_loss=1.3621 val_top1=66.55% best=66.55% | 1691 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 032/100 train_loss=1.3756 train_top1=81.02% val_loss=1.3406 val_top1=66.61% best=66.61% | 1700 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 033/100 train_loss=1.3567 train_top1=81.47% val_loss=1.3570 val_top1=66.72% best=66.72% | 1691 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 034/100 train_loss=1.3350 train_top1=82.20% val_loss=1.3593 val_top1=66.80% best=66.80% | 1681 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 035/100 train_loss=1.3024 train_top1=83.43% val_loss=1.3183 val_top1=67.85% best=67.85% | 1681 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 036/100 train_loss=1.2856 train_top1=83.98% val_loss=1.3613 val_top1=67.05% best=67.85% | 1692 img/s
+[hf_deit_small_100] 037/100 train_loss=1.2601 train_top1=84.73% val_loss=1.3328 val_top1=68.02% best=68.02% | 1688 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 038/100 train_loss=1.2468 train_top1=85.28% val_loss=1.3708 val_top1=67.41% best=68.02% | 1693 img/s
+[hf_deit_small_100] 039/100 train_loss=1.2251 train_top1=85.90% val_loss=1.3378 val_top1=68.42% best=68.42% | 1681 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 040/100 train_loss=1.2150 train_top1=86.26% val_loss=1.3895 val_top1=67.25% best=68.42% | 1679 img/s
+[hf_deit_small_100] 041/100 train_loss=1.1922 train_top1=87.00% val_loss=1.3426 val_top1=67.84% best=68.42% | 1682 img/s
+[hf_deit_small_100] 042/100 train_loss=1.1783 train_top1=87.51% val_loss=1.3523 val_top1=68.08% best=68.42% | 1699 img/s
+[hf_deit_small_100] 043/100 train_loss=1.1584 train_top1=88.11% val_loss=1.3744 val_top1=67.86% best=68.42% | 1692 img/s
+[hf_deit_small_100] 044/100 train_loss=1.1500 train_top1=88.41% val_loss=1.3300 val_top1=68.65% best=68.65% | 1690 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 045/100 train_loss=1.1356 train_top1=88.81% val_loss=1.3881 val_top1=68.31% best=68.65% | 1683 img/s
+[hf_deit_small_100] 046/100 train_loss=1.1221 train_top1=89.27% val_loss=1.3532 val_top1=68.48% best=68.65% | 1687 img/s
+[hf_deit_small_100] 047/100 train_loss=1.1078 train_top1=89.76% val_loss=1.3565 val_top1=68.15% best=68.65% | 1698 img/s
+[hf_deit_small_100] 048/100 train_loss=1.0929 train_top1=90.16% val_loss=1.3428 val_top1=69.20% best=69.20% | 1686 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 049/100 train_loss=1.0882 train_top1=90.33% val_loss=1.3405 val_top1=69.17% best=69.20% | 1703 img/s
+[hf_deit_small_100] 050/100 train_loss=1.0727 train_top1=90.87% val_loss=1.3644 val_top1=68.82% best=69.20% | 1684 img/s
+[hf_deit_small_100] 051/100 train_loss=1.0622 train_top1=91.15% val_loss=1.3731 val_top1=68.65% best=69.20% | 1683 img/s
+[hf_deit_small_100] 052/100 train_loss=1.0492 train_top1=91.58% val_loss=1.3551 val_top1=69.01% best=69.20% | 1687 img/s
+[hf_deit_small_100] 053/100 train_loss=1.0431 train_top1=91.73% val_loss=1.3621 val_top1=68.75% best=69.20% | 1686 img/s
+[hf_deit_small_100] 054/100 train_loss=1.0368 train_top1=92.00% val_loss=1.3556 val_top1=68.88% best=69.20% | 1688 img/s
+[hf_deit_small_100] 055/100 train_loss=1.0252 train_top1=92.29% val_loss=1.3633 val_top1=69.35% best=69.35% | 1681 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 056/100 train_loss=1.0147 train_top1=92.64% val_loss=1.3667 val_top1=69.48% best=69.48% | 1686 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 057/100 train_loss=1.0020 train_top1=93.05% val_loss=1.3503 val_top1=69.24% best=69.48% | 1687 img/s
+[hf_deit_small_100] 058/100 train_loss=0.9919 train_top1=93.34% val_loss=1.3627 val_top1=69.38% best=69.48% | 1691 img/s
+[hf_deit_small_100] 059/100 train_loss=0.9840 train_top1=93.59% val_loss=1.3767 val_top1=69.19% best=69.48% | 1676 img/s
+[hf_deit_small_100] 060/100 train_loss=0.9753 train_top1=93.89% val_loss=1.3589 val_top1=69.94% best=69.94% | 1688 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 061/100 train_loss=0.9700 train_top1=94.05% val_loss=1.3732 val_top1=69.48% best=69.94% | 1701 img/s
+[hf_deit_small_100] 062/100 train_loss=0.9632 train_top1=94.22% val_loss=1.3591 val_top1=69.87% best=69.94% | 1698 img/s
+[hf_deit_small_100] 063/100 train_loss=0.9530 train_top1=94.58% val_loss=1.3599 val_top1=69.90% best=69.94% | 1684 img/s
+[hf_deit_small_100] 064/100 train_loss=0.9476 train_top1=94.72% val_loss=1.3653 val_top1=69.77% best=69.94% | 1688 img/s
+[hf_deit_small_100] 065/100 train_loss=0.9413 train_top1=94.92% val_loss=1.3561 val_top1=70.25% best=70.25% | 1695 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 066/100 train_loss=0.9320 train_top1=95.21% val_loss=1.4117 val_top1=69.08% best=70.25% | 1691 img/s
+[hf_deit_small_100] 067/100 train_loss=0.9221 train_top1=95.44% val_loss=1.3923 val_top1=69.82% best=70.25% | 1680 img/s
+[hf_deit_small_100] 068/100 train_loss=0.9184 train_top1=95.57% val_loss=1.3499 val_top1=70.32% best=70.32% | 1695 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 069/100 train_loss=0.9128 train_top1=95.75% val_loss=1.3469 val_top1=70.48% best=70.48% | 1691 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 070/100 train_loss=0.9071 train_top1=95.92% val_loss=1.3758 val_top1=70.26% best=70.48% | 1692 img/s
+[hf_deit_small_100] 071/100 train_loss=0.9006 train_top1=96.18% val_loss=1.3876 val_top1=70.09% best=70.48% | 1688 img/s
+[hf_deit_small_100] 072/100 train_loss=0.8927 train_top1=96.39% val_loss=1.3749 val_top1=70.41% best=70.48% | 1679 img/s
+[hf_deit_small_100] 073/100 train_loss=0.8910 train_top1=96.45% val_loss=1.3749 val_top1=70.71% best=70.71% | 1679 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 074/100 train_loss=0.8859 train_top1=96.60% val_loss=1.3715 val_top1=70.22% best=70.71% | 1682 img/s
+[hf_deit_small_100] 075/100 train_loss=0.8804 train_top1=96.73% val_loss=1.3588 val_top1=70.66% best=70.71% | 1686 img/s
+[hf_deit_small_100] 076/100 train_loss=0.8749 train_top1=96.95% val_loss=1.3677 val_top1=70.64% best=70.71% | 1690 img/s
+[hf_deit_small_100] 077/100 train_loss=0.8715 train_top1=97.03% val_loss=1.3610 val_top1=70.97% best=70.97% | 1676 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 078/100 train_loss=0.8682 train_top1=97.13% val_loss=1.3578 val_top1=71.00% best=71.00% | 1686 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 079/100 train_loss=0.8633 train_top1=97.26% val_loss=1.3565 val_top1=71.18% best=71.18% | 1693 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 080/100 train_loss=0.8603 train_top1=97.34% val_loss=1.3641 val_top1=70.95% best=71.18% | 1683 img/s
+[hf_deit_small_100] 081/100 train_loss=0.8553 train_top1=97.53% val_loss=1.3626 val_top1=71.12% best=71.18% | 1691 img/s
+[hf_deit_small_100] 082/100 train_loss=0.8501 train_top1=97.66% val_loss=1.3689 val_top1=71.19% best=71.19% | 1684 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 083/100 train_loss=0.8502 train_top1=97.67% val_loss=1.3565 val_top1=71.22% best=71.22% | 1687 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 084/100 train_loss=0.8457 train_top1=97.77% val_loss=1.3716 val_top1=71.13% best=71.22% | 1688 img/s
+[hf_deit_small_100] 085/100 train_loss=0.8450 train_top1=97.85% val_loss=1.3724 val_top1=71.20% best=71.22% | 1690 img/s
+[hf_deit_small_100] 086/100 train_loss=0.8417 train_top1=97.95% val_loss=1.3703 val_top1=71.23% best=71.23% | 1680 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 087/100 train_loss=0.8371 train_top1=98.10% val_loss=1.3836 val_top1=71.38% best=71.38% | 1690 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 088/100 train_loss=0.8397 train_top1=98.02% val_loss=1.3675 val_top1=71.32% best=71.38% | 1680 img/s
+[hf_deit_small_100] 089/100 train_loss=0.8354 train_top1=98.11% val_loss=1.3611 val_top1=71.61% best=71.61% | 1686 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 090/100 train_loss=0.8341 train_top1=98.17% val_loss=1.3661 val_top1=71.47% best=71.61% | 1684 img/s
+[hf_deit_small_100] 091/100 train_loss=0.8330 train_top1=98.19% val_loss=1.3637 val_top1=71.43% best=71.61% | 1696 img/s
+[hf_deit_small_100] 092/100 train_loss=0.8320 train_top1=98.24% val_loss=1.3650 val_top1=71.67% best=71.67% | 1683 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 093/100 train_loss=0.8313 train_top1=98.30% val_loss=1.3630 val_top1=71.72% best=71.72% | 1690 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 094/100 train_loss=0.8299 train_top1=98.32% val_loss=1.3666 val_top1=71.60% best=71.72% | 1686 img/s
+[hf_deit_small_100] 095/100 train_loss=0.8300 train_top1=98.32% val_loss=1.3629 val_top1=71.57% best=71.72% | 1686 img/s
+[hf_deit_small_100] 096/100 train_loss=0.8285 train_top1=98.32% val_loss=1.3613 val_top1=71.56% best=71.72% | 1694 img/s
+[hf_deit_small_100] 097/100 train_loss=0.8281 train_top1=98.39% val_loss=1.3630 val_top1=71.64% best=71.72% | 1697 img/s
+[hf_deit_small_100] 098/100 train_loss=0.8271 train_top1=98.43% val_loss=1.3627 val_top1=71.73% best=71.73% | 1693 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] 099/100 train_loss=0.8285 train_top1=98.39% val_loss=1.3619 val_top1=71.72% best=71.73% | 1689 img/s
+[hf_deit_small_100] 100/100 train_loss=0.8275 train_top1=98.37% val_loss=1.3618 val_top1=71.73% best=71.73% | 1688 img/s
+[hf_deit_small_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/hf_deit_small_100/best.pt
+[hf_deit_small_100] TEST top1=66.80% loss=1.6193
+{
+  "name": "hf_deit_small_100",
+  "model": "deit_small",
+  "hf_repo": "facebook/deit-small-patch16-224",
+  "pretrained": false,
+  "params": 21727204,
+  "best_val_top1": 0.7173076923076923,
+  "test_loss": 1.6193334106445312,
+  "test_top1": 0.668
+}

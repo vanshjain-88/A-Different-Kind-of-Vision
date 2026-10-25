@@ -1,0 +1,14 @@
+[2026-10-24 19:34:59] queue started: 5 runs
+[2026-10-24 19:34:59] waiting for tok_db4_learn_nomlp_100 to finish
+[2026-10-24 19:48:00] tok_db4_learn_nomlp_100 finished
+[2026-10-24 19:48:00] start tok_db4_learn_mlp1_100: gpurun python3 haar_tok_daub.py --wavelet db4 --mlp-ratio 1 --name tok_db4_learn_mlp1_100
+[2026-10-24 21:38:59] done  tok_db4_learn_mlp1_100 in 110 min
+[2026-10-24 21:38:59] start tok_pixels_nomlp_100: gpurun python3 haar_tok_daub.py --tokenizer pixels --mlp-ratio 0 --name tok_pixels_nomlp_100
+[2026-10-24 23:23:54] done  tok_pixels_nomlp_100 in 104 min
+[2026-10-24 23:23:54] start tok_pixels_mlp1_100: gpurun python3 haar_tok_daub.py --tokenizer pixels --mlp-ratio 1 --name tok_pixels_mlp1_100
+[2026-10-25 01:10:13] done  tok_pixels_mlp1_100 in 106 min
+[2026-10-25 01:10:13] start tok_db4_learn_mlp2_100: gpurun python3 haar_tok_daub.py --wavelet db4 --mlp-ratio 2 --name tok_db4_learn_mlp2_100
+[2026-10-25 03:04:18] done  tok_db4_learn_mlp2_100 in 114 min
+[2026-10-25 03:04:19] start tok_pixels_mlp2_100: gpurun python3 haar_tok_daub.py --tokenizer pixels --mlp-ratio 2 --name tok_pixels_mlp2_100
+[2026-10-25 04:54:40] done  tok_pixels_mlp2_100 in 110 min
+[2026-10-25 04:54:40] queue finished; results in runs/imagenet100/mlp_ablation/results.md

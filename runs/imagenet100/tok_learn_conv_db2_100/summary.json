@@ -1,0 +1,8 @@
+{
+  "name": "tok_learn_conv_db2_100",
+  "wavelet": "db2",
+  "params": 6769252,
+  "best_val_top1": 0.7877692307692308,
+  "test_loss": 1.2148049011230468,
+  "test_top1": 0.7416
+}

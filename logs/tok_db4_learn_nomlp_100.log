@@ -1,0 +1,175 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Resolving data files:   0%|                                                           | 0/30 [00:00<?, ?it/s]Resolving data files: 100%|################################################| 30/30 [00:00<00:00, 6710.89it/s]
+Resolving data files:   0%|                                                           | 0/30 [00:00<?, ?it/s]Resolving data files: 100%|################################################| 30/30 [00:00<00:00, 9465.82it/s]
+Loading dataset shards:   0%|                                                         | 0/30 [00:00<?, ?it/s]Loading dataset shards: 100%|##############################################| 30/30 [00:00<00:00, 1790.75it/s]
+params=453,988 tokens/img=256 token_dim=768 batch=256 mixer=conv wavelet=db4 learn_filters=True modulus=False mlp_ratio=0.0 tokenizer=wavelet
+[tok_db4_learn_nomlp_100] 001/100 train_loss=4.5138 train_top1=2.49% val_loss=4.3209 val_top1=3.92% best=3.92% | 1763 img/s | ortho=1.64e-02
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 002/100 train_loss=4.4068 train_top1=3.95% val_loss=4.2442 val_top1=4.96% best=4.96% | 2081 img/s | ortho=5.71e-02
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 003/100 train_loss=4.3468 train_top1=5.10% val_loss=4.1167 val_top1=7.86% best=7.86% | 2115 img/s | ortho=1.53e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 004/100 train_loss=4.2552 train_top1=6.68% val_loss=3.9576 val_top1=9.79% best=9.79% | 2127 img/s | ortho=3.22e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 005/100 train_loss=4.0658 train_top1=10.24% val_loss=3.6321 val_top1=15.39% best=15.39% | 2123 img/s | ortho=5.16e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 006/100 train_loss=3.9102 train_top1=13.28% val_loss=3.4575 val_top1=18.55% best=18.55% | 2112 img/s | ortho=6.17e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 007/100 train_loss=3.8154 train_top1=15.66% val_loss=3.3766 val_top1=19.84% best=19.84% | 2124 img/s | ortho=6.62e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 008/100 train_loss=3.7609 train_top1=16.65% val_loss=3.2735 val_top1=21.77% best=21.77% | 2022 img/s | ortho=6.81e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 009/100 train_loss=3.7201 train_top1=17.46% val_loss=3.2383 val_top1=22.46% best=22.46% | 2074 img/s | ortho=6.86e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 010/100 train_loss=3.6895 train_top1=18.42% val_loss=3.1812 val_top1=23.62% best=23.62% | 2096 img/s | ortho=7.05e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 011/100 train_loss=3.6552 train_top1=19.00% val_loss=3.1717 val_top1=23.74% best=23.74% | 2110 img/s | ortho=7.12e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 012/100 train_loss=3.6317 train_top1=19.67% val_loss=3.1284 val_top1=24.84% best=24.84% | 2157 img/s | ortho=7.23e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 013/100 train_loss=3.6069 train_top1=20.31% val_loss=3.0904 val_top1=25.55% best=25.55% | 2081 img/s | ortho=7.42e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 014/100 train_loss=3.5819 train_top1=20.93% val_loss=3.0498 val_top1=25.59% best=25.59% | 2082 img/s | ortho=7.42e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 015/100 train_loss=3.5647 train_top1=21.09% val_loss=3.0159 val_top1=26.96% best=26.96% | 2134 img/s | ortho=7.52e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 016/100 train_loss=3.5479 train_top1=21.49% val_loss=3.0059 val_top1=27.36% best=27.36% | 2127 img/s | ortho=7.74e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 017/100 train_loss=3.5279 train_top1=22.14% val_loss=2.9683 val_top1=27.98% best=27.98% | 2097 img/s | ortho=7.75e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 018/100 train_loss=3.5107 train_top1=22.44% val_loss=2.9518 val_top1=28.43% best=28.43% | 2052 img/s | ortho=7.81e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 019/100 train_loss=3.4978 train_top1=22.78% val_loss=2.9535 val_top1=28.22% best=28.43% | 2122 img/s | ortho=7.97e-01
+[tok_db4_learn_nomlp_100] 020/100 train_loss=3.4839 train_top1=23.05% val_loss=2.9723 val_top1=27.71% best=28.43% | 2017 img/s | ortho=8.06e-01
+[tok_db4_learn_nomlp_100] 021/100 train_loss=3.4668 train_top1=23.61% val_loss=2.9011 val_top1=29.52% best=29.52% | 2153 img/s | ortho=8.11e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 022/100 train_loss=3.4550 train_top1=23.80% val_loss=2.8711 val_top1=29.62% best=29.62% | 2128 img/s | ortho=8.20e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 023/100 train_loss=3.4433 train_top1=24.13% val_loss=2.8347 val_top1=30.66% best=30.66% | 2075 img/s | ortho=8.19e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 024/100 train_loss=3.4324 train_top1=24.33% val_loss=2.8620 val_top1=30.09% best=30.66% | 2089 img/s | ortho=8.26e-01
+[tok_db4_learn_nomlp_100] 025/100 train_loss=3.4156 train_top1=24.69% val_loss=2.8311 val_top1=30.95% best=30.95% | 2015 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 026/100 train_loss=3.4117 train_top1=24.74% val_loss=2.8010 val_top1=31.28% best=31.28% | 2088 img/s | ortho=8.55e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 027/100 train_loss=3.4010 train_top1=25.23% val_loss=2.8029 val_top1=31.09% best=31.28% | 2074 img/s | ortho=8.41e-01
+[tok_db4_learn_nomlp_100] 028/100 train_loss=3.3906 train_top1=25.38% val_loss=2.7930 val_top1=31.72% best=31.72% | 2085 img/s | ortho=8.50e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 029/100 train_loss=3.3768 train_top1=25.82% val_loss=2.7983 val_top1=31.26% best=31.72% | 2102 img/s | ortho=8.56e-01
+[tok_db4_learn_nomlp_100] 030/100 train_loss=3.3680 train_top1=25.84% val_loss=2.7719 val_top1=32.22% best=32.22% | 2077 img/s | ortho=8.41e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 031/100 train_loss=3.3624 train_top1=26.24% val_loss=2.7552 val_top1=32.69% best=32.69% | 2039 img/s | ortho=8.49e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 032/100 train_loss=3.3511 train_top1=26.42% val_loss=2.7366 val_top1=32.68% best=32.69% | 2080 img/s | ortho=8.52e-01
+[tok_db4_learn_nomlp_100] 033/100 train_loss=3.3407 train_top1=26.59% val_loss=2.7104 val_top1=33.15% best=33.15% | 1988 img/s | ortho=8.53e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 034/100 train_loss=3.3405 train_top1=26.67% val_loss=2.7106 val_top1=33.08% best=33.15% | 2077 img/s | ortho=8.50e-01
+[tok_db4_learn_nomlp_100] 035/100 train_loss=3.3269 train_top1=27.20% val_loss=2.6954 val_top1=33.72% best=33.72% | 1996 img/s | ortho=8.57e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 036/100 train_loss=3.3193 train_top1=27.36% val_loss=2.7120 val_top1=33.18% best=33.72% | 2094 img/s | ortho=8.55e-01
+[tok_db4_learn_nomlp_100] 037/100 train_loss=3.3121 train_top1=27.47% val_loss=2.6766 val_top1=33.72% best=33.72% | 2109 img/s | ortho=8.51e-01
+[tok_db4_learn_nomlp_100] 038/100 train_loss=3.3066 train_top1=27.57% val_loss=2.6746 val_top1=34.02% best=34.02% | 1982 img/s | ortho=8.51e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 039/100 train_loss=3.3012 train_top1=27.82% val_loss=2.6814 val_top1=34.12% best=34.12% | 2018 img/s | ortho=8.55e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 040/100 train_loss=3.2937 train_top1=27.96% val_loss=2.6631 val_top1=34.35% best=34.35% | 2135 img/s | ortho=8.48e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 041/100 train_loss=3.2812 train_top1=28.12% val_loss=2.6501 val_top1=34.42% best=34.42% | 2093 img/s | ortho=8.54e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 042/100 train_loss=3.2796 train_top1=28.21% val_loss=2.6312 val_top1=35.21% best=35.21% | 2151 img/s | ortho=8.57e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 043/100 train_loss=3.2742 train_top1=28.48% val_loss=2.6235 val_top1=35.26% best=35.26% | 2148 img/s | ortho=8.52e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 044/100 train_loss=3.2667 train_top1=28.63% val_loss=2.6050 val_top1=35.35% best=35.35% | 2140 img/s | ortho=8.49e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 045/100 train_loss=3.2582 train_top1=29.03% val_loss=2.6239 val_top1=34.71% best=35.35% | 2120 img/s | ortho=8.50e-01
+[tok_db4_learn_nomlp_100] 046/100 train_loss=3.2548 train_top1=28.97% val_loss=2.6240 val_top1=35.05% best=35.35% | 2156 img/s | ortho=8.50e-01
+[tok_db4_learn_nomlp_100] 047/100 train_loss=3.2497 train_top1=29.09% val_loss=2.6020 val_top1=35.57% best=35.57% | 2158 img/s | ortho=8.44e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 048/100 train_loss=3.2358 train_top1=29.45% val_loss=2.5880 val_top1=35.72% best=35.72% | 2140 img/s | ortho=8.44e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 049/100 train_loss=3.2409 train_top1=29.35% val_loss=2.5773 val_top1=36.26% best=36.26% | 2151 img/s | ortho=8.48e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 050/100 train_loss=3.2266 train_top1=29.70% val_loss=2.5668 val_top1=36.77% best=36.77% | 2155 img/s | ortho=8.45e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 051/100 train_loss=3.2222 train_top1=29.85% val_loss=2.5535 val_top1=36.75% best=36.77% | 2140 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 052/100 train_loss=3.2201 train_top1=29.89% val_loss=2.5716 val_top1=36.42% best=36.77% | 2154 img/s | ortho=8.44e-01
+[tok_db4_learn_nomlp_100] 053/100 train_loss=3.2100 train_top1=30.24% val_loss=2.5622 val_top1=36.82% best=36.82% | 2135 img/s | ortho=8.49e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 054/100 train_loss=3.2056 train_top1=30.14% val_loss=2.5456 val_top1=37.25% best=37.25% | 2131 img/s | ortho=8.50e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 055/100 train_loss=3.2003 train_top1=30.35% val_loss=2.5467 val_top1=37.08% best=37.25% | 2150 img/s | ortho=8.48e-01
+[tok_db4_learn_nomlp_100] 056/100 train_loss=3.1994 train_top1=30.52% val_loss=2.5574 val_top1=36.52% best=37.25% | 2113 img/s | ortho=8.44e-01
+[tok_db4_learn_nomlp_100] 057/100 train_loss=3.1854 train_top1=30.76% val_loss=2.5223 val_top1=37.87% best=37.87% | 2146 img/s | ortho=8.43e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 058/100 train_loss=3.1859 train_top1=30.97% val_loss=2.5237 val_top1=37.15% best=37.87% | 2144 img/s | ortho=8.45e-01
+[tok_db4_learn_nomlp_100] 059/100 train_loss=3.1810 train_top1=30.95% val_loss=2.5350 val_top1=37.54% best=37.87% | 2154 img/s | ortho=8.42e-01
+[tok_db4_learn_nomlp_100] 060/100 train_loss=3.1764 train_top1=30.95% val_loss=2.5066 val_top1=37.63% best=37.87% | 2034 img/s | ortho=8.48e-01
+[tok_db4_learn_nomlp_100] 061/100 train_loss=3.1714 train_top1=31.19% val_loss=2.4934 val_top1=38.30% best=38.30% | 2139 img/s | ortho=8.46e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 062/100 train_loss=3.1664 train_top1=31.42% val_loss=2.4949 val_top1=38.32% best=38.32% | 2137 img/s | ortho=8.49e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 063/100 train_loss=3.1647 train_top1=31.32% val_loss=2.4872 val_top1=38.54% best=38.54% | 2160 img/s | ortho=8.46e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 064/100 train_loss=3.1628 train_top1=31.47% val_loss=2.4930 val_top1=38.12% best=38.54% | 2144 img/s | ortho=8.47e-01
+[tok_db4_learn_nomlp_100] 065/100 train_loss=3.1531 train_top1=31.82% val_loss=2.4903 val_top1=38.45% best=38.54% | 2163 img/s | ortho=8.44e-01
+[tok_db4_learn_nomlp_100] 066/100 train_loss=3.1508 train_top1=31.91% val_loss=2.4936 val_top1=38.42% best=38.54% | 2131 img/s | ortho=8.44e-01
+[tok_db4_learn_nomlp_100] 067/100 train_loss=3.1447 train_top1=31.89% val_loss=2.4634 val_top1=38.95% best=38.95% | 2151 img/s | ortho=8.44e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 068/100 train_loss=3.1375 train_top1=32.17% val_loss=2.4545 val_top1=39.04% best=39.04% | 2158 img/s | ortho=8.42e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 069/100 train_loss=3.1335 train_top1=32.35% val_loss=2.4576 val_top1=38.75% best=39.04% | 2121 img/s | ortho=8.41e-01
+[tok_db4_learn_nomlp_100] 070/100 train_loss=3.1314 train_top1=32.39% val_loss=2.4620 val_top1=38.88% best=39.04% | 2131 img/s | ortho=8.41e-01
+[tok_db4_learn_nomlp_100] 071/100 train_loss=3.1238 train_top1=32.62% val_loss=2.4504 val_top1=39.30% best=39.30% | 2155 img/s | ortho=8.44e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 072/100 train_loss=3.1213 train_top1=32.58% val_loss=2.4449 val_top1=39.04% best=39.30% | 2144 img/s | ortho=8.42e-01
+[tok_db4_learn_nomlp_100] 073/100 train_loss=3.1220 train_top1=32.66% val_loss=2.4384 val_top1=39.36% best=39.36% | 2136 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 074/100 train_loss=3.1147 train_top1=32.72% val_loss=2.4291 val_top1=39.65% best=39.65% | 2126 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 075/100 train_loss=3.1115 train_top1=32.77% val_loss=2.4326 val_top1=39.71% best=39.71% | 2109 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 076/100 train_loss=3.1125 train_top1=32.90% val_loss=2.4230 val_top1=39.73% best=39.73% | 2127 img/s | ortho=8.41e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 077/100 train_loss=3.1051 train_top1=33.02% val_loss=2.4210 val_top1=40.11% best=40.11% | 2156 img/s | ortho=8.42e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 078/100 train_loss=3.1054 train_top1=33.01% val_loss=2.4223 val_top1=39.34% best=40.11% | 2150 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 079/100 train_loss=3.1000 train_top1=33.30% val_loss=2.4132 val_top1=40.09% best=40.11% | 2094 img/s | ortho=8.41e-01
+[tok_db4_learn_nomlp_100] 080/100 train_loss=3.0985 train_top1=33.36% val_loss=2.4109 val_top1=40.21% best=40.21% | 2140 img/s | ortho=8.41e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 081/100 train_loss=3.0980 train_top1=33.20% val_loss=2.4140 val_top1=40.08% best=40.21% | 2122 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 082/100 train_loss=3.0862 train_top1=33.56% val_loss=2.4016 val_top1=40.30% best=40.30% | 2142 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 083/100 train_loss=3.0878 train_top1=33.53% val_loss=2.4098 val_top1=40.16% best=40.30% | 2118 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 084/100 train_loss=3.0836 train_top1=33.65% val_loss=2.3989 val_top1=40.29% best=40.30% | 2136 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 085/100 train_loss=3.0850 train_top1=33.77% val_loss=2.3964 val_top1=40.61% best=40.61% | 2150 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 086/100 train_loss=3.0831 train_top1=33.66% val_loss=2.3965 val_top1=40.39% best=40.61% | 2168 img/s | ortho=8.39e-01
+[tok_db4_learn_nomlp_100] 087/100 train_loss=3.0751 train_top1=33.82% val_loss=2.3962 val_top1=40.41% best=40.61% | 2170 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 088/100 train_loss=3.0799 train_top1=33.84% val_loss=2.3916 val_top1=40.42% best=40.61% | 2153 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 089/100 train_loss=3.0755 train_top1=34.00% val_loss=2.3901 val_top1=40.53% best=40.61% | 2149 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 090/100 train_loss=3.0750 train_top1=34.03% val_loss=2.3908 val_top1=40.31% best=40.61% | 2142 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 091/100 train_loss=3.0751 train_top1=33.98% val_loss=2.3887 val_top1=40.62% best=40.62% | 2185 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 092/100 train_loss=3.0728 train_top1=33.99% val_loss=2.3861 val_top1=40.62% best=40.62% | 2146 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 093/100 train_loss=3.0716 train_top1=33.98% val_loss=2.3869 val_top1=40.59% best=40.62% | 2159 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 094/100 train_loss=3.0715 train_top1=34.11% val_loss=2.3875 val_top1=40.71% best=40.71% | 2150 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 095/100 train_loss=3.0692 train_top1=34.12% val_loss=2.3865 val_top1=40.68% best=40.71% | 2170 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 096/100 train_loss=3.0711 train_top1=34.14% val_loss=2.3856 val_top1=40.71% best=40.71% | 2158 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 097/100 train_loss=3.0694 train_top1=34.22% val_loss=2.3852 val_top1=40.79% best=40.79% | 2166 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/tok_db4_learn_nomlp_100/best.pt
+[tok_db4_learn_nomlp_100] 098/100 train_loss=3.0677 train_top1=34.27% val_loss=2.3854 val_top1=40.72% best=40.79% | 2165 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 099/100 train_loss=3.0657 train_top1=34.22% val_loss=2.3851 val_top1=40.75% best=40.79% | 2150 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] 100/100 train_loss=3.0719 train_top1=33.90% val_loss=2.3852 val_top1=40.70% best=40.79% | 2154 img/s | ortho=8.40e-01
+[tok_db4_learn_nomlp_100] TEST top1=36.52% loss=2.5410
+{
+  "name": "tok_db4_learn_nomlp_100",
+  "wavelet": "db4",
+  "params": 453988,
+  "best_val_top1": 0.40792307692307694,
+  "test_loss": 2.541048645019531,
+  "test_top1": 0.3652
+}

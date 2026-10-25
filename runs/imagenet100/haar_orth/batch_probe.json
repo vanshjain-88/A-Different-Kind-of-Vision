@@ -1,0 +1,46 @@
+{
+  "probe_version": 4,
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "torch": "2.11.0+cu128",
+  "image_size": 256,
+  "amp_dtype": "torch.bfloat16",
+  "selected_batch": 152,
+  "tested": [
+    {
+      "fit": true,
+      "batch_size": 128,
+      "peak_alloc_gb": 63.705373764038086,
+      "peak_reserved_gb": 69.5390625,
+      "images_per_sec": 106.37753713058008
+    },
+    {
+      "fit": true,
+      "batch_size": 144,
+      "peak_alloc_gb": 71.66631507873535,
+      "peak_reserved_gb": 78.255859375,
+      "images_per_sec": 76.98253875806417
+    },
+    {
+      "fit": true,
+      "batch_size": 152,
+      "peak_alloc_gb": 75.66631650924683,
+      "peak_reserved_gb": 78.533203125,
+      "images_per_sec": 73.858676581956
+    },
+    {
+      "fit": false,
+      "batch_size": 160,
+      "error": "OOM"
+    },
+    {
+      "fit": false,
+      "batch_size": 192,
+      "error": "OOM"
+    },
+    {
+      "fit": false,
+      "batch_size": 256,
+      "error": "OOM"
+    }
+  ]
+}

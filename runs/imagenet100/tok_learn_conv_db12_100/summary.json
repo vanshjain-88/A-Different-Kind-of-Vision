@@ -1,0 +1,8 @@
+{
+  "name": "tok_learn_conv_db12_100",
+  "wavelet": "db12",
+  "params": 6778212,
+  "best_val_top1": 0.7773076923076923,
+  "test_loss": 1.2429124145507813,
+  "test_top1": 0.7318
+}

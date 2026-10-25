@@ -1,0 +1,8 @@
+{
+  "name": "tok_db4_learn_mlp2_100",
+  "wavelet": "db4",
+  "params": 3618148,
+  "best_val_top1": 0.7814615384615384,
+  "test_loss": 1.1589684753417968,
+  "test_top1": 0.7384
+}

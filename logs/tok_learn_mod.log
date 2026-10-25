@@ -1,0 +1,41 @@
+gpurun: job 2482 on GPU(s) [0] [guaranteed] remaining budget 24.7h
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+params=6,966,430 tokens/img=256 token_dim=1533 batch=256 mixer=conv learn_filters=True modulus=True
+[tok_learn_mod] 001/030 train_loss=4.3719 train_top1=4.60% val_loss=3.9003 val_top1=9.65% best=9.65% | 1636 img/s | ortho=4.85e-03
+[tok_learn_mod] 002/030 train_loss=3.9556 train_top1=11.18% val_loss=3.4080 val_top1=17.55% best=17.55% | 1981 img/s | ortho=4.01e-03
+[tok_learn_mod] 003/030 train_loss=3.5522 train_top1=19.89% val_loss=2.7593 val_top1=30.99% best=30.99% | 1993 img/s | ortho=1.48e-02
+[tok_learn_mod] 004/030 train_loss=3.1070 train_top1=31.15% val_loss=2.2960 val_top1=40.31% best=40.31% | 1993 img/s | ortho=3.67e-02
+[tok_learn_mod] 005/030 train_loss=2.7828 train_top1=40.10% val_loss=1.9762 val_top1=48.79% best=48.79% | 1991 img/s | ortho=7.06e-02
+[tok_learn_mod] 006/030 train_loss=2.5516 train_top1=46.58% val_loss=1.7240 val_top1=54.42% best=54.42% | 2000 img/s | ortho=1.05e-01
+[tok_learn_mod] 007/030 train_loss=2.3826 train_top1=51.40% val_loss=1.5807 val_top1=57.94% best=57.94% | 1994 img/s | ortho=1.37e-01
+[tok_learn_mod] 008/030 train_loss=2.2428 train_top1=55.64% val_loss=1.4604 val_top1=61.02% best=61.02% | 1991 img/s | ortho=1.65e-01
+[tok_learn_mod] 009/030 train_loss=2.1294 train_top1=58.69% val_loss=1.3525 val_top1=64.24% best=64.24% | 1983 img/s | ortho=1.92e-01
+[tok_learn_mod] 010/030 train_loss=2.0400 train_top1=61.49% val_loss=1.2902 val_top1=65.72% best=65.72% | 1978 img/s | ortho=2.08e-01
+[tok_learn_mod] 011/030 train_loss=1.9484 train_top1=64.02% val_loss=1.2403 val_top1=67.15% best=67.15% | 1968 img/s | ortho=2.16e-01
+[tok_learn_mod] 012/030 train_loss=1.8798 train_top1=66.04% val_loss=1.1817 val_top1=68.80% best=68.80% | 1967 img/s | ortho=2.28e-01
+[tok_learn_mod] 013/030 train_loss=1.8088 train_top1=68.20% val_loss=1.1295 val_top1=70.18% best=70.18% | 1992 img/s | ortho=2.36e-01
+[tok_learn_mod] 014/030 train_loss=1.7450 train_top1=70.04% val_loss=1.1460 val_top1=70.40% best=70.40% | 1983 img/s | ortho=2.38e-01
+[tok_learn_mod] 015/030 train_loss=1.6868 train_top1=71.75% val_loss=1.0995 val_top1=71.12% best=71.12% | 1984 img/s | ortho=2.40e-01
+[tok_learn_mod] 016/030 train_loss=1.6336 train_top1=73.38% val_loss=1.0497 val_top1=72.33% best=72.33% | 1983 img/s | ortho=2.40e-01
+[tok_learn_mod] 017/030 train_loss=1.5861 train_top1=74.88% val_loss=1.0332 val_top1=72.72% best=72.72% | 1987 img/s | ortho=2.41e-01
+[tok_learn_mod] 018/030 train_loss=1.5392 train_top1=76.37% val_loss=1.0326 val_top1=72.98% best=72.98% | 1977 img/s | ortho=2.39e-01
+[tok_learn_mod] 019/030 train_loss=1.4944 train_top1=77.77% val_loss=0.9888 val_top1=73.79% best=73.79% | 1989 img/s | ortho=2.41e-01
+[tok_learn_mod] 020/030 train_loss=1.4489 train_top1=79.29% val_loss=0.9951 val_top1=74.50% best=74.50% | 1968 img/s | ortho=2.36e-01
+[tok_learn_mod] 021/030 train_loss=1.4125 train_top1=80.59% val_loss=0.9696 val_top1=74.69% best=74.69% | 1976 img/s | ortho=2.37e-01
+[tok_learn_mod] 022/030 train_loss=1.3786 train_top1=81.65% val_loss=0.9650 val_top1=74.94% best=74.94% | 1996 img/s | ortho=2.34e-01
+[tok_learn_mod] 023/030 train_loss=1.3468 train_top1=82.69% val_loss=0.9660 val_top1=75.02% best=75.02% | 1964 img/s | ortho=2.33e-01
+[tok_learn_mod] 024/030 train_loss=1.3208 train_top1=83.62% val_loss=0.9506 val_top1=75.76% best=75.76% | 1976 img/s | ortho=2.33e-01
+[tok_learn_mod] 025/030 train_loss=1.2959 train_top1=84.45% val_loss=0.9545 val_top1=75.20% best=75.76% | 1985 img/s | ortho=2.32e-01
+[tok_learn_mod] 026/030 train_loss=1.2740 train_top1=85.23% val_loss=0.9458 val_top1=75.90% best=75.90% | 1993 img/s | ortho=2.32e-01
+[tok_learn_mod] 027/030 train_loss=1.2638 train_top1=85.63% val_loss=0.9441 val_top1=75.75% best=75.90% | 1969 img/s | ortho=2.31e-01
+[tok_learn_mod] 028/030 train_loss=1.2566 train_top1=85.86% val_loss=0.9441 val_top1=75.78% best=75.90% | 1980 img/s | ortho=2.32e-01
+[tok_learn_mod] 029/030 train_loss=1.2475 train_top1=86.17% val_loss=0.9435 val_top1=75.92% best=75.92% | 1978 img/s | ortho=2.31e-01
+[tok_learn_mod] 030/030 train_loss=1.2470 train_top1=86.16% val_loss=0.9437 val_top1=75.91% best=75.92% | 1972 img/s | ortho=2.31e-01
+[tok_learn_mod] TEST top1=72.52% loss=1.1126
+{
+  "name": "tok_learn_mod",
+  "params": 6966430,
+  "best_val_top1": 0.7592307692307693,
+  "test_loss": 1.1125715515136718,
+  "test_top1": 0.7252
+}

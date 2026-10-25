@@ -1,0 +1,12 @@
+{
+  "repo": "ilee0022/ImageNet100",
+  "splits": {
+    "train": 117000,
+    "test": 5000,
+    "validation": 13000
+  },
+  "train_split": "train",
+  "eval_split": "validation",
+  "num_classes": 100,
+  "cache_dir": "/home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/data/imagenet100/datasets_cache"
+}

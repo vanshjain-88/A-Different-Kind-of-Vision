@@ -1,0 +1,72 @@
+{
+  "probe_version": 4,
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "torch": "2.11.0+cu128",
+  "image_size": 256,
+  "amp_dtype": "torch.bfloat16",
+  "selected_batch": 568,
+  "tested": [
+    {
+      "fit": true,
+      "batch_size": 128,
+      "peak_alloc_gb": 17.692779064178467,
+      "peak_reserved_gb": 19.1171875,
+      "images_per_sec": 4.530968058753106
+    },
+    {
+      "fit": true,
+      "batch_size": 256,
+      "peak_alloc_gb": 34.93775510787964,
+      "peak_reserved_gb": 37.3984375,
+      "images_per_sec": 6.079855441621181
+    },
+    {
+      "fit": true,
+      "batch_size": 512,
+      "peak_alloc_gb": 69.49434804916382,
+      "peak_reserved_gb": 74.236328125,
+      "images_per_sec": 6.702295033313583
+    },
+    {
+      "fit": true,
+      "batch_size": 544,
+      "peak_alloc_gb": 73.81439352035522,
+      "peak_reserved_gb": 76.478515625,
+      "images_per_sec": 6.7023193021171386
+    },
+    {
+      "fit": true,
+      "batch_size": 560,
+      "peak_alloc_gb": 75.97361421585083,
+      "peak_reserved_gb": 77.90234375,
+      "images_per_sec": 6.723037883058252
+    },
+    {
+      "fit": true,
+      "batch_size": 568,
+      "peak_alloc_gb": 77.05127143859863,
+      "peak_reserved_gb": 77.349609375,
+      "images_per_sec": 6.708701250738142
+    },
+    {
+      "fit": false,
+      "batch_size": 576,
+      "error": "OOM"
+    },
+    {
+      "fit": false,
+      "batch_size": 640,
+      "error": "OOM"
+    },
+    {
+      "fit": false,
+      "batch_size": 768,
+      "error": "OOM"
+    },
+    {
+      "fit": false,
+      "batch_size": 1024,
+      "error": "OOM"
+    }
+  ]
+}

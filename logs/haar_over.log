@@ -1,0 +1,111 @@
+gpurun: job 2460 on GPU(s) [0] [guaranteed] remaining budget 39.23h
+GPU: NVIDIA A100 80GB PCIe | VRAM: 79.25 GB | AMP: torch.bfloat16 | torch 2.11.0+cu128
+Data cache: /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/data/imagenet100
+Checkpoints: /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100
+Models: ['haar_over']
+Loading ImageNet-100 ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Splits: {'train': 117000, 'test': 5000, 'validation': 13000}  eval=validation
+
+================================================================================================
+TRAINING: haar_over
+================================================================================================
+[batch probe:haar_over] 128 ... FIT | alloc=63.71 GB reserved=71.86 GB | 75.9 img/s
+[batch probe:haar_over] 256 ... OOM
+[batch probe:haar_over] 192 ... OOM
+[batch probe:haar_over] 160 ... OOM
+[batch probe:haar_over] 144 ... FIT | alloc=71.67 GB reserved=78.30 GB | 58.7 img/s
+[batch probe:haar_over] 152 ... FIT | alloc=75.67 GB reserved=77.10 GB | 60.0 img/s
+[haar_over] maximum measured training batch = 152
+[haar_over] params=75,100  batch=152  start_epoch=0  best=0.00%
+[haar_over] checkpoints: last=/home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt best=/home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt history=/home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/history.csv
+[haar_over] 001/030 bs=152 train_loss=4.4462 train_top1=3.48% val_loss=4.2038 val_top1=5.74% best=5.74% | 83.8 img/s | VRAM alloc/res=75.67/77.10 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 002/030 bs=152 train_loss=4.2237 train_top1=6.61% val_loss=3.9474 val_top1=9.05% best=9.05% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 003/030 bs=152 train_loss=4.0550 train_top1=9.65% val_loss=3.7016 val_top1=13.38% best=13.38% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 004/030 bs=152 train_loss=3.9334 train_top1=11.94% val_loss=3.5583 val_top1=15.27% best=15.27% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 005/030 bs=152 train_loss=3.8408 train_top1=13.85% val_loss=3.4480 val_top1=17.68% best=17.68% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 006/030 bs=152 train_loss=3.7626 train_top1=15.64% val_loss=3.3460 val_top1=19.06% best=19.06% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 007/030 bs=152 train_loss=3.7052 train_top1=17.02% val_loss=3.2680 val_top1=20.61% best=20.61% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 008/030 bs=152 train_loss=3.6586 train_top1=18.07% val_loss=3.2156 val_top1=21.44% best=21.44% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 009/030 bs=152 train_loss=3.6189 train_top1=19.01% val_loss=3.1459 val_top1=23.34% best=23.34% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 010/030 bs=152 train_loss=3.5817 train_top1=20.07% val_loss=3.1137 val_top1=23.97% best=23.97% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 011/030 bs=152 train_loss=3.5537 train_top1=20.61% val_loss=3.0928 val_top1=24.28% best=24.28% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 012/030 bs=152 train_loss=3.5243 train_top1=21.49% val_loss=3.0554 val_top1=24.96% best=24.96% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 013/030 bs=152 train_loss=3.4997 train_top1=22.01% val_loss=3.0241 val_top1=25.95% best=25.95% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 014/030 bs=152 train_loss=3.4797 train_top1=22.50% val_loss=2.9944 val_top1=26.20% best=26.20% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 015/030 bs=152 train_loss=3.4608 train_top1=22.98% val_loss=2.9691 val_top1=26.80% best=26.80% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 016/030 bs=152 train_loss=3.4412 train_top1=23.57% val_loss=2.9461 val_top1=27.98% best=27.98% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 017/030 bs=152 train_loss=3.4199 train_top1=24.01% val_loss=2.9253 val_top1=27.77% best=27.98% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] 018/030 bs=152 train_loss=3.4086 train_top1=24.49% val_loss=2.9118 val_top1=28.15% best=28.15% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 019/030 bs=152 train_loss=3.3967 train_top1=24.64% val_loss=2.9041 val_top1=28.22% best=28.22% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 020/030 bs=152 train_loss=3.3838 train_top1=24.93% val_loss=2.8901 val_top1=28.66% best=28.66% | 83.8 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 021/030 bs=152 train_loss=3.3745 train_top1=25.19% val_loss=2.8668 val_top1=29.41% best=29.41% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 022/030 bs=152 train_loss=3.3650 train_top1=25.46% val_loss=2.8509 val_top1=29.93% best=29.93% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 023/030 bs=152 train_loss=3.3562 train_top1=25.64% val_loss=2.8459 val_top1=29.69% best=29.93% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] 024/030 bs=152 train_loss=3.3524 train_top1=25.82% val_loss=2.8486 val_top1=29.49% best=29.93% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] 025/030 bs=152 train_loss=3.3435 train_top1=26.04% val_loss=2.8347 val_top1=30.01% best=30.01% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 026/030 bs=152 train_loss=3.3395 train_top1=26.13% val_loss=2.8257 val_top1=30.27% best=30.27% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] saved best checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+[haar_over] 027/030 bs=152 train_loss=3.3353 train_top1=26.23% val_loss=2.8246 val_top1=30.18% best=30.27% | 83.6 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] 028/030 bs=152 train_loss=3.3331 train_top1=26.39% val_loss=2.8205 val_top1=30.18% best=30.27% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] 029/030 bs=152 train_loss=3.3322 train_top1=26.32% val_loss=2.8183 val_top1=30.25% best=30.27% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] 030/030 bs=152 train_loss=3.3295 train_top1=26.50% val_loss=2.8190 val_top1=30.19% best=30.27% | 83.7 img/s | VRAM alloc/res=75.67/75.82 GB
+[haar_over] saved checkpoint to /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/last.pt
+[haar_over] finished epochs=30 best=30.27% best_checkpoint=/home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+
+Saved model results
+model        status       epoch  best_top1   val_loss checkpoint
+haar_over    done            30     30.27%     2.8257 /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_over/best.pt
+Epoch results: /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/epoch_metrics.csv
+Final results: /home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/final_results.csv

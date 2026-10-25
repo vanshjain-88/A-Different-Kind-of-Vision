@@ -1,0 +1,7 @@
+{
+  "name": "tok_fixed_conv",
+  "params": 6768996,
+  "best_val_top1": 0.7373076923076923,
+  "test_loss": 1.1838425537109376,
+  "test_top1": 0.6954
+}

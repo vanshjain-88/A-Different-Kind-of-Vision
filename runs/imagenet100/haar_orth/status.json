@@ -1,0 +1,25 @@
+{
+  "status": "done",
+  "model": "haar_orth",
+  "completed_epoch": 30,
+  "epochs": 30,
+  "batch_size": 152,
+  "best_top1": 0.27707692307692305,
+  "latest": {
+    "epoch": 30,
+    "batch_size": 152,
+    "lr": 1.0142463387085464e-06,
+    "train_loss": 3.4370465473948904,
+    "train_top1": 0.2367479980836356,
+    "val_loss": 2.940943411753728,
+    "val_top1": 0.2752307692307692,
+    "best_top1": 0.27707692307692305,
+    "train_images_per_sec": 127.84541065047304,
+    "peak_alloc_gb": 75.66631889343262,
+    "peak_reserved_gb": 78.5390625,
+    "vram_total_gb": 79.250732421875
+  },
+  "best_checkpoint": "/home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_orth/best.pt",
+  "last_checkpoint": "/home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_orth/last.pt",
+  "history_csv": "/home/vansh23578/projects/Geometric-Tokenisers-1/training/checkpoints/runs/imagenet100/haar_orth/history.csv"
+}

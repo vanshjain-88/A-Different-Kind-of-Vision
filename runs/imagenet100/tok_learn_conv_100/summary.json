@@ -1,0 +1,7 @@
+{
+  "name": "tok_learn_conv_100",
+  "params": 6769060,
+  "best_val_top1": 0.7809230769230769,
+  "test_loss": 1.2370450744628907,
+  "test_top1": 0.738
+}
